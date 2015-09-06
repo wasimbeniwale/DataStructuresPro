@@ -29,7 +29,45 @@ DataStructuresProApp.config(['$stateProvider','$urlRouterProvider', function($st
           controller: 'helpCtrl'
         }
       }
-    });
+    })
+
+    .state('menu.stack', {
+      url:'/stack', 
+      views:{
+        'menuContent':{
+          templateUrl: 'templates/stackAbout.html'
+       }
+      }
+    })
+
+    .state('menu.queue', {
+      url:'/queue', 
+      views:{
+        'menuContent':{
+          templateUrl: 'templates/queueAbout.html'
+       }
+      }
+    })
+
+    .state('menu.tree', {
+      url:'/tree', 
+      views:{
+        'menuContent':{
+          templateUrl: 'templates/treeAbout.html'
+       }
+      }
+    })
+
+    .state('menu.graph', {
+      url:'/graph', 
+      views:{
+        'menuContent':{
+          templateUrl: 'templates/graphAbout.html'
+       }
+      }
+    })
+
+    ;
 
     //tabs configuration
 
